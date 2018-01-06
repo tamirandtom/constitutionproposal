@@ -1,0 +1,8 @@
+bringing all data to html as text
+each item is connected to model (screen1attr-4)
+items are checkable (toggles) and updates in model
+items are limited to 4 checked items
+toggle animations
+creating main screen (home)
+creating final piece text and binding to models
+adding styles

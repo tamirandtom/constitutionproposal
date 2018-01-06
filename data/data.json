@@ -1,0 +1,13 @@
+{
+  "categories":[
+    {
+      "name":"ADVENTURE",
+      "mark":"I",      
+      "properties":["Friendly","Safe Exploring","Fun","Outgoing","Pleasant Climate","Wild Life","Scenic","Non Homo-Centric","Sexy"]
+    },{
+      "name":"CITIZENSHIP",
+      "mark":"II",
+      "properties":["Friendly","Safe Exploring","Fun","Outgoing","Pleasant Climate","Wild Life","Scenic","Non Homo-Centric","Sexy"]
+    }
+  ]
+}
