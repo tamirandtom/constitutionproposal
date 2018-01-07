@@ -1,125 +1,146 @@
 @import url('https://fonts.googleapis.com/css?family=Libre+Baskerville:400,700|Montserrat:700,600,800,900');
-
-*{
+* {
     box-sizing: border-box;
 }
 
-html, body {
-    height:100%;
-    padding:0;
-    margin:0;
+html,
+body {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    -webkit-text-size-adjust: 100%;
 }
+
+
+/* each screen takes 100% of screen */
+
 .screen {
-    position:absolute;
-  width:100%;
-  height:calc(100% - 40px);
-  display: flex;
-  flex-direction:column;
-  background: #fff;  
+    position: absolute;
+    width: 100%;
+    height: calc(100% - 40px);
+    display: flex;
+    flex-direction: column;
+    background: #fff;
 }
+
 .background {
     z-index: 0;
+    padding-bottom: 211px;
     background-image: url('../img/line.svg');
     position: absolute;
     width: 100%;
     height: 100%;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-position: center 60px; 
+    background-position: center 60px;
     pointer-events: none;
     display: flex;
     justify-content: center;
 }
 
 .subheaders {
-    text-align:center;
+    text-align: center;
 }
+
 .property {
     z-index: 1;
     text-align: center;
-    width:50%;
-    transition:all 0.3s ease-out;
+    width: 50%;
+    transition: all 0.3s ease-out;
 }
+
 .property--c {
     align-self: flex-end;
 }
+
 .active-item {
-    width:100%;
+    width: 100%;
 }
+
 .crossed-item {
     text-decoration: line-through;
-    pointer-events:none;
+    pointer-events: none;
 }
+
 .bottom-sheet {
-    position:absolute;
-    bottom:0px;    
-    height:40px;
-    width:100%;
-    display:flex;
-    flex-direction:row;
+    position: fixed;
+    bottom: 0px;
+    height: 100px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
     justify-content: space-around;
 }
 
-.flex-2cols
-{
+.flex-2cols {
     display: flex;
 }
+
 .col50 {
     width: 50%;
-    display:flex;
+    display: flex;
     flex-direction: column;
     align-items: center;
-    padding-bottom:40px;
+    padding-bottom: 40px;
 }
+
+
 /* titles */
 
 h1 {
     z-index: 1;
     text-align: center;
     font-family: 'Montserrat', sans-serif;
-    font-size:16px;
-    line-height:19px;
-    font-weight:600;
+    font-size: 16px;
+    line-height: 19px;
+    font-weight: 600;
 }
+h1.intro-text {
+    line-height: 22px;
+}
+
 .screen--mark h1 {
-    padding:90px 0 60px 0;
+    padding: 90px 0 60px 0;
 }
 
 .subheaders {
-text-transform: uppercase;
-font-size: 10px;
-line-height:21px;
-height:40px;
-font-family: 'Montserrat', sans-serif;
-/* border-bottom:1px solid #000; */
+    text-transform: uppercase;
+    font-size: 10px;
+    line-height: 21px;
+    height: 40px;
+    font-family: 'Montserrat', sans-serif;
+    /* border-bottom:1px solid #000; */
 }
 
 .underline {
-    display:inline-block;
-    width:44px;
-    height:1px;
-    background:#000;
+    display: inline-block;
+    width: 44px;
+    height: 1px;
+    background: #000;
 }
 
-.subheaders.header-w{
+.subheaders.header-w {
     font-family: 'Libre Baskerville', serif;
-    }
+}
 
 .property {
     font-size: 10px;
-    line-height: 21px;
+    line-height: 16px;
+    margin-top:10px;
 }
+
 .property--c {
-    font-family: 'Montserrat', sans-serif;    
+    font-family: 'Montserrat', sans-serif;
 }
+
 .property--w {
     font-family: 'Libre Baskerville', serif;
-
 }
 
 .results-screen-padding {
-    height:90px;
+    height: 90px;
 }
+
 .results-block {
     display: flex;
     flex-direction: row;
@@ -129,69 +150,87 @@ font-family: 'Montserrat', sans-serif;
     width: 540px;
 }
 
-.results-block .active-item{
+.results-block .active-item {
     width: auto;
 }
-.results-w,.results-c {
-margin-right:3px;
-display: inline;
-font-size:8px;
-line-height:11px;
+
+.results-w,
+.results-c {
+    margin-right: 3px;
+    display: inline;
+    font-size: 10px;
+    line-height: 15px;
 }
+
 .results-block-wrap {
-    z-index:1;
-    display:flex;
+    z-index: 1;
+    display: flex;
     align-items: center;
     flex-direction: column;
-    margin-top:21px;
+    margin-top: 21px;
 }
-.results-w {font-family: 'Libre Baskerville', serif;}
-.results-c {font-family: 'Montserrat', sans-serif;}
+
+.results-w {
+    font-family: 'Libre Baskerville', serif;
+}
+
+.results-c {
+    font-family: 'Montserrat', sans-serif;
+}
 
 h4 {
     text-align: center;
-    margin:0px;
-    font-size:8px;
-    line-height:11px;
+    margin: 0px;
+    font-size: 8px;
+    line-height: 11px;
     font-family: 'Montserrat', sans-serif;
 }
 
 h4.is-w-title {
     font-family: 'Libre Baskerville', serif;
 }
-span {display:inline-block;}
+
+span {
+    display: inline-block;
+}
 
 
 /* Buttons */
 
 .button--attr {
-    font-size:12px;
+    font-size: 12px;
     font-family: 'Libre Baskerville', serif;
-    color:#000;
+    color: #000;
     text-transform: uppercase;
     width: 240px;
     text-align: center;
 }
-.hide-button {opacity:0;pointer-events: none;}
-.glow {
-   background-image:url("../img/next-glow.svg");
-   background-repeat:no-repeat;
-}
-.glow img {
-opacity:0;
 
+.hide-button {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.glow {
+    background-image: url("../img/next-glow.svg");
+    background-repeat: no-repeat;
+}
+
+.glow img {
+    opacity: 0;
 }
 
 .loader {
     display: flex;
-    justify-content:center;
+    justify-content: center;
     align-items: center;
     z-index: 1;
 }
+
 .loader-dot {
-    display:inline-block;
+    display: inline-block;
     border-radius: 50%;
-    width:6px;
+    width: 6px;
     height: 6px;
     background: #000;
     margin: 16px;
@@ -202,40 +241,46 @@ opacity:0;
 
 .loader-dot:nth-child(1) {
     animation-delay: 0.1s;
-
 }
 
 .loader-dot:nth-child(2) {
     animation-delay: 0.3s;
- 
-
 }
+
 .loader-dot:nth-child(3) {
     animation-delay: 0.5s;
-
 }
 
 .intro-logo {
-
     animation-name: rotate;
     animation-iteration-count: infinite;
     animation-duration: 40s;
     animation-timing-function: linear;
-    display:inline-block;
-
+    display: inline-block;
+    position: absolute;
+    top: calc(50% - 270px);
 }
-
 
 @keyframes load {
-    0%   {background-color: #000;}
-    80%  {background-color: rgba(0,0,0,0);}
-    90%  {background-color: rgba(0,0,0,0);}
-    100% {background-color: #000;}
+    0% {
+        background-color: #000;
+    }
+    80% {
+        background-color: rgba(0, 0, 0, 0);
+    }
+    90% {
+        background-color: rgba(0, 0, 0, 0);
+    }
+    100% {
+        background-color: #000;
+    }
 }
 
-
-
 @keyframes rotate {
-    0%   {transform: rotate(0deg);}
-    100%   {transform: rotate(360deg);}
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
 }
