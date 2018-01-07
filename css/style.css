@@ -211,10 +211,27 @@ opacity:0;
 
 }
 
+.intro-logo {
+
+    animation-name: rotate;
+    animation-iteration-count: infinite;
+    animation-duration: 40s;
+    animation-timing-function: linear;
+    display:inline-block;
+
+}
+
 
 @keyframes load {
     0%   {background-color: #000;}
     80%  {background-color: rgba(0,0,0,0);}
     90%  {background-color: rgba(0,0,0,0);}
     100% {background-color: #000;}
+}
+
+
+
+@keyframes rotate {
+    0%   {transform: rotate(0deg);}
+    100%   {transform: rotate(360deg);}
 }

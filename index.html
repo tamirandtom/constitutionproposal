@@ -20,7 +20,7 @@
             <div class='screen screen--first' ng-show="screen==0">
                         <div class="results-screen-padding"></div>
                         <div class="background">
-                              <img src="img/logo.svg" alt="">
+                              <img class='intro-logo' src="img/logo.svg" alt="">
                         </div>
                   
                   
@@ -325,15 +325,15 @@
                         
                         <h4>ADVENTURE</h4>
                         <div class="results-block">
-                              <div class="results-w" ng-class="{'active-item': screen1.prop1,'crossed-item':(screen1.total>maxAttributes && !screen1.prop1)}">Friendly</div>
-                              <div class="results-c" ng-class="{'active-item': screen1.prop2,'crossed-item':(screen1.total>maxAttributes && !screen1.prop2)}">Safe Exploring</div>
-                              <div class="results-w" ng-class="{'active-item': screen1.prop3,'crossed-item':(screen1.total>maxAttributes && !screen1.prop3)}">Fun</div>
-                              <div class="results-c" ng-class="{'active-item': screen1.prop4,'crossed-item':(screen1.total>maxAttributes && !screen1.prop4)}">Outgoing</div>
-                              <div class="results-w" ng-class="{'active-item': screen1.prop5,'crossed-item':(screen1.total>maxAttributes && !screen1.prop5)}">Pleasant Climate</div>
-                              <div class="results-c" ng-class="{'active-item': screen1.prop6,'crossed-item':(screen1.total>maxAttributes && !screen1.prop6)}">Wild Life</div>
-                              <div class="results-w" ng-class="{'active-item': screen1.prop7,'crossed-item':(screen1.total>maxAttributes && !screen1.prop7)}">Scenic</div>
-                              <div class="results-c" ng-class="{'active-item': screen1.prop8,'crossed-item':(screen1.total>maxAttributes && !screen1.prop8)}">Non Homo-Centric</div>
-                              <div class="results-w" ng-class="{'active-item': screen1.prop9,'crossed-item':(screen1.total>maxAttributes && !screen1.prop9)}">Sexy</div>
+                              <div class="results-w" ng-class="{'active-item': screen1.prop1,'crossed-item':(!screen1.prop1)}">Friendly</div>
+                              <div class="results-c" ng-class="{'active-item': screen1.prop2,'crossed-item':(!screen1.prop2)}">Safe Exploring</div>
+                              <div class="results-w" ng-class="{'active-item': screen1.prop3,'crossed-item':(!screen1.prop3)}">Fun</div>
+                              <div class="results-c" ng-class="{'active-item': screen1.prop4,'crossed-item':(!screen1.prop4)}">Outgoing</div>
+                              <div class="results-w" ng-class="{'active-item': screen1.prop5,'crossed-item':(!screen1.prop5)}">Pleasant Climate</div>
+                              <div class="results-c" ng-class="{'active-item': screen1.prop6,'crossed-item':(!screen1.prop6)}">Wild Life</div>
+                              <div class="results-w" ng-class="{'active-item': screen1.prop7,'crossed-item':(!screen1.prop7)}">Scenic</div>
+                              <div class="results-c" ng-class="{'active-item': screen1.prop8,'crossed-item':(!screen1.prop8)}">Non Homo-Centric</div>
+                              <div class="results-w" ng-class="{'active-item': screen1.prop9,'crossed-item':(!screen1.prop9)}">Sexy</div>
                         </div>
                   </div>
 
@@ -341,30 +341,30 @@
                   <div class="results-block-wrap">
                         <h4>CITIZENSHIP</h4>
                         <div class="results-block">
-                              <div class="results-w" ng-class="{'active-item': screen2.prop1,'crossed-item':(screen2.total>maxAttributes && !screen2.prop1)}">Cares About Human Rights</div>
-                              <div class="results-c" ng-class="{'active-item': screen2.prop2,'crossed-item':(screen2.total>maxAttributes && !screen2.prop2)}">Cares About The Environment</div>
-                              <div class="results-w" ng-class="{'active-item': screen2.prop3,'crossed-item':(screen2.total>maxAttributes && !screen2.prop3)}">Gender Equality</div>
-                              <div class="results-w" ng-class="{'active-item': screen2.prop4,'crossed-item':(screen2.total>maxAttributes && !screen2.prop4)}">Progressive</div>
-                              <div class="results-w" ng-class="{'active-item': screen2.prop5,'crossed-item':(screen2.total>maxAttributes && !screen2.prop5)}">Religious Freedom</div>
-                              <div class="results-w" ng-class="{'active-item': screen2.prop6,'crossed-item':(screen2.total>maxAttributes && !screen2.prop6)}">Respects Property Rights</div>
-                              <div class="results-w" ng-class="{'active-item': screen2.prop7,'crossed-item':(screen2.total>maxAttributes && !screen2.prop7)}">Trustworthy</div>
-                              <div class="results-w" ng-class="{'active-item': screen2.prop8,'crossed-item':(screen2.total>maxAttributes && !screen2.prop8)}">Well-Distributed Political Power</div>
+                              <div class="results-w" ng-class="{'active-item': screen2.prop1,'crossed-item':(!screen2.prop1)}">Cares About Human Rights</div>
+                              <div class="results-c" ng-class="{'active-item': screen2.prop2,'crossed-item':(!screen2.prop2)}">Cares About The Environment</div>
+                              <div class="results-w" ng-class="{'active-item': screen2.prop3,'crossed-item':(!screen2.prop3)}">Gender Equality</div>
+                              <div class="results-w" ng-class="{'active-item': screen2.prop4,'crossed-item':(!screen2.prop4)}">Progressive</div>
+                              <div class="results-w" ng-class="{'active-item': screen2.prop5,'crossed-item':(!screen2.prop5)}">Religious Freedom</div>
+                              <div class="results-w" ng-class="{'active-item': screen2.prop6,'crossed-item':(!screen2.prop6)}">Respects Property Rights</div>
+                              <div class="results-w" ng-class="{'active-item': screen2.prop7,'crossed-item':(!screen2.prop7)}">Trustworthy</div>
+                              <div class="results-w" ng-class="{'active-item': screen2.prop8,'crossed-item':(!screen2.prop8)}">Well-Distributed Political Power</div>
                         </div>
                   </div>
 
                   <div class="results-block-wrap">
                         <h4>CULTURAL INFLUENCE</h4>
                         <div class="results-block">
-                              <div class="results-w" ng-class="{'active-item': screen3.prop1,'crossed-item':(screen3.total>maxAttributes && !screen3.prop1)}">Culturally Significant In Terms Of Entertainment</div>
-                              <div class="results-c" ng-class="{'active-item': screen3.prop2,'crossed-item':(screen3.total>maxAttributes && !screen3.prop2)}">Art As An Engine For Growth And Entrepreneurship</div>
-                              <div class="results-w" ng-class="{'active-item': screen3.prop3,'crossed-item':(screen3.total>maxAttributes && !screen3.prop3)}">Fashionable</div>
-                              <div class="results-c" ng-class="{'active-item': screen3.prop4,'crossed-item':(screen3.total>maxAttributes && !screen3.prop4)}">Diverse And Open For Different Influences Contemporary</div>
-                              <div class="results-w" ng-class="{'active-item': screen3.prop5,'crossed-item':(screen3.total>maxAttributes && !screen3.prop5)}">Happy</div>
-                              <div class="results-c" ng-class="{'active-item': screen3.prop6,'crossed-item':(screen3.total>maxAttributes && !screen3.prop6)}">Support Art As Educational Necessity</div>
-                              <div class="results-w" ng-class="{'active-item': screen3.prop7,'crossed-item':(screen3.total>maxAttributes && !screen3.prop7)}">Has An Influential Culture</div>
-                              <div class="results-c" ng-class="{'active-item': screen3.prop8,'crossed-item':(screen3.total>maxAttributes && !screen3.prop8)}">Modern</div>
-                              <div class="results-w" ng-class="{'active-item': screen3.prop9,'crossed-item':(screen3.total>maxAttributes && !screen3.prop9)}">Prestigious</div>
-                              <div class="results-w" ng-class="{'active-item': screen3.prop10,'crossed-item':(screen3.total>maxAttributes && !screen3.prop10)}">Trendy</div>
+                              <div class="results-w" ng-class="{'active-item': screen3.prop1,'crossed-item':(!screen3.prop1)}">Culturally Significant In Terms Of Entertainment</div>
+                              <div class="results-c" ng-class="{'active-item': screen3.prop2,'crossed-item':(!screen3.prop2)}">Art As An Engine For Growth And Entrepreneurship</div>
+                              <div class="results-w" ng-class="{'active-item': screen3.prop3,'crossed-item':(!screen3.prop3)}">Fashionable</div>
+                              <div class="results-c" ng-class="{'active-item': screen3.prop4,'crossed-item':(!screen3.prop4)}">Diverse And Open For Different Influences Contemporary</div>
+                              <div class="results-w" ng-class="{'active-item': screen3.prop5,'crossed-item':(!screen3.prop5)}">Happy</div>
+                              <div class="results-c" ng-class="{'active-item': screen3.prop6,'crossed-item':(!screen3.prop6)}">Support Art As Educational Necessity</div>
+                              <div class="results-w" ng-class="{'active-item': screen3.prop7,'crossed-item':(!screen3.prop7)}">Has An Influential Culture</div>
+                              <div class="results-c" ng-class="{'active-item': screen3.prop8,'crossed-item':(!screen3.prop8)}">Modern</div>
+                              <div class="results-w" ng-class="{'active-item': screen3.prop9,'crossed-item':(!screen3.prop9)}">Prestigious</div>
+                              <div class="results-w" ng-class="{'active-item': screen3.prop10,'crossed-item':(!screen3.prop10)}">Trendy</div>
 
 
 
@@ -376,40 +376,40 @@
                   <div class="results-block-wrap">
                         <h4>ENTREPRENEURSHIP</h4>
                         <div class="results-block">
-                              <div class="results-w" ng-class="{'active-item': screen4.prop1,'crossed-item':(screen4.total>maxAttributes && !screen4.prop1)}">Connected To The Rest Of The World</div>
-                              <div class="results-c" ng-class="{'active-item': screen4.prop2,'crossed-item':(screen4.total>maxAttributes && !screen4.prop2)}">Entrepreneurship That Reflects the Diversity of the Population</div>
-                              <div class="results-w" ng-class="{'active-item': screen4.prop3,'crossed-item':(screen4.total>maxAttributes && !screen4.prop3)}">Educated Population</div>
-                              <div class="results-c" ng-class="{'active-item': screen4.prop4,'crossed-item':(screen4.total>maxAttributes && !screen4.prop4)}">Skilled Labor Force In All Fields</div>
-                              <div class="results-w" ng-class="{'active-item': screen4.prop5,'crossed-item':(screen4.total>maxAttributes && !screen4.prop5)}">Entrepreneurial</div>
-                              <div class="results-c" ng-class="{'active-item': screen4.prop6,'crossed-item':(screen4.total>maxAttributes && !screen4.prop6)}">Social Mobility</div>
-                              <div class="results-w" ng-class="{'active-item': screen4.prop7,'crossed-item':(screen4.total>maxAttributes && !screen4.prop7)}">Innovative</div>
-                              <div class="results-c" ng-class="{'active-item': screen4.prop8,'crossed-item':(screen4.total>maxAttributes && !screen4.prop8)}">Provides Easy Access To Capital</div>
-                              <div class="results-w" ng-class="{'active-item': screen4.prop9,'crossed-item':(screen4.total>maxAttributes && !screen4.prop9)}">Skilled Labor Force</div>
-                              <div class="results-w" ng-class="{'active-item': screen4.prop10,'crossed-item':(screen4.total>maxAttributes && !screen4.prop10)}">Transparent Business</div>
-                              <div class="results-w" ng-class="{'active-item': screen4.prop11,'crossed-item':(screen4.total>maxAttributes && !screen4.prop11)}">Practices</div>
-                              <div class="results-w" ng-class="{'active-item': screen4.prop12,'crossed-item':(screen4.total>maxAttributes && !screen4.prop12)}">Well-Developed Infrastructure</div>
-                              <div class="results-w" ng-class="{'active-item': screen4.prop13,'crossed-item':(screen4.total>maxAttributes && !screen4.prop13)}">Well-Developed Legal Framework</div>
+                              <div class="results-w" ng-class="{'active-item': screen4.prop1,'crossed-item':(!screen4.prop1)}">Connected To The Rest Of The World</div>
+                              <div class="results-c" ng-class="{'active-item': screen4.prop2,'crossed-item':(!screen4.prop2)}">Entrepreneurship That Reflects the Diversity of the Population</div>
+                              <div class="results-w" ng-class="{'active-item': screen4.prop3,'crossed-item':(!screen4.prop3)}">Educated Population</div>
+                              <div class="results-c" ng-class="{'active-item': screen4.prop4,'crossed-item':(!screen4.prop4)}">Skilled Labor Force In All Fields</div>
+                              <div class="results-w" ng-class="{'active-item': screen4.prop5,'crossed-item':(!screen4.prop5)}">Entrepreneurial</div>
+                              <div class="results-c" ng-class="{'active-item': screen4.prop6,'crossed-item':(!screen4.prop6)}">Social Mobility</div>
+                              <div class="results-w" ng-class="{'active-item': screen4.prop7,'crossed-item':(!screen4.prop7)}">Innovative</div>
+                              <div class="results-c" ng-class="{'active-item': screen4.prop8,'crossed-item':(!screen4.prop8)}">Provides Easy Access To Capital</div>
+                              <div class="results-w" ng-class="{'active-item': screen4.prop9,'crossed-item':(!screen4.prop9)}">Skilled Labor Force</div>
+                              <div class="results-w" ng-class="{'active-item': screen4.prop10,'crossed-item':(!screen4.prop10)}">Transparent Business</div>
+                              <div class="results-w" ng-class="{'active-item': screen4.prop11,'crossed-item':(!screen4.prop11)}">Practices</div>
+                              <div class="results-w" ng-class="{'active-item': screen4.prop12,'crossed-item':(!screen4.prop12)}">Well-Developed Infrastructure</div>
+                              <div class="results-w" ng-class="{'active-item': screen4.prop13,'crossed-item':(!screen4.prop13)}">Well-Developed Legal Framework</div>
                         </div>
                   </div>
 
                   <div class="results-block-wrap">
                         <h4>HERITAGE</h4>
                         <div class="results-block">
-                              <div class="results-w" ng-class="{'active-item': screen5.prop1,'crossed-item':(screen5.total>maxAttributes && !screen5.prop1)}">Culturally Accessible</div>
-                              <div class="results-c" ng-class="{'active-item': screen5.prop2,'crossed-item':(screen5.total>maxAttributes && !screen5.prop2)}">Promotes And Preserves The Heritage Of The Different Social Groups Of Its Citizens</div>
-                              <div class="results-w" ng-class="{'active-item': screen5.prop3,'crossed-item':(screen5.total>maxAttributes && !screen5.prop3)}">Has A Rich History</div>
-                              <div class="results-c" ng-class="{'active-item': screen5.prop4,'crossed-item':(screen5.total>maxAttributes && !screen5.prop4)}">Has Great Food</div>
-                              <div class="results-w" ng-class="{'active-item': screen5.prop5,'crossed-item':(screen5.total>maxAttributes && !screen5.prop5)}">Many Cultural Attractions</div>
+                              <div class="results-w" ng-class="{'active-item': screen5.prop1,'crossed-item':(!screen5.prop1)}">Culturally Accessible</div>
+                              <div class="results-c" ng-class="{'active-item': screen5.prop2,'crossed-item':(!screen5.prop2)}">Promotes And Preserves The Heritage Of The Different Social Groups Of Its Citizens</div>
+                              <div class="results-w" ng-class="{'active-item': screen5.prop3,'crossed-item':(!screen5.prop3)}">Has A Rich History</div>
+                              <div class="results-c" ng-class="{'active-item': screen5.prop4,'crossed-item':(!screen5.prop4)}">Has Great Food</div>
+                              <div class="results-w" ng-class="{'active-item': screen5.prop5,'crossed-item':(!screen5.prop5)}">Many Cultural Attractions</div>
                         </div>
                   </div>
 
                   <div class="results-block-wrap">
                         <h4>MOVERS</h4>
                         <div class="results-block">
-                              <div class="results-w" ng-class="{'active-item': screen6.prop1,'crossed-item':(screen6.total>maxAttributes && !screen6.prop1)}">Different</div>
-                              <div class="results-w" ng-class="{'active-item': screen6.prop2,'crossed-item':(screen6.total>maxAttributes && !screen6.prop2)}">Distinctive</div>
-                              <div class="results-w" ng-class="{'active-item': screen6.prop3,'crossed-item':(screen6.total>maxAttributes && !screen6.prop3)}">Dynamic</div>
-                              <div class="results-w" ng-class="{'active-item': screen6.prop4,'crossed-item':(screen6.total>maxAttributes && !screen6.prop4)}">Unique</div>
+                              <div class="results-w" ng-class="{'active-item': screen6.prop1,'crossed-item':(!screen6.prop1)}">Different</div>
+                              <div class="results-w" ng-class="{'active-item': screen6.prop2,'crossed-item':(!screen6.prop2)}">Distinctive</div>
+                              <div class="results-w" ng-class="{'active-item': screen6.prop3,'crossed-item':(!screen6.prop3)}">Dynamic</div>
+                              <div class="results-w" ng-class="{'active-item': screen6.prop4,'crossed-item':(!screen6.prop4)}">Unique</div>
 
                         </div>
                   </div>
@@ -417,15 +417,15 @@
                   <div class="results-block-wrap">
                         <h4>OPEN FOR BUSINESS</h4>
                         <div class="results-block">
-                              <div class="results-w" ng-class="{'active-item': screen7.prop1,'crossed-item':(screen7.total>maxAttributes && !screen7.prop1)}">Bureaucratic</div>
-                              <div class="results-c" ng-class="{'active-item': screen7.prop2,'crossed-item':(screen7.total>maxAttributes && !screen7.prop2)}">Friendly Updates Bureaucracy</div>
-                              <div class="results-w" ng-class="{'active-item': screen7.prop3,'crossed-item':(screen7.total>maxAttributes && !screen7.prop3)}">Cheap Manufacturing Costs</div>
-                              <div class="results-c" ng-class="{'active-item': screen7.prop4,'crossed-item':(screen7.total>maxAttributes && !screen7.prop4)}">Low Manufacturing Costs</div>
-                              <div class="results-w" ng-class="{'active-item': screen7.prop5,'crossed-item':(screen7.total>maxAttributes && !screen7.prop5)}">Corrupt</div>
-                              <div class="results-c" ng-class="{'active-item': screen7.prop6,'crossed-item':(screen7.total>maxAttributes && !screen7.prop6)}">Equale Representation For All Gender Races Backgrounds In Key Positions</div>
-                              <div class="results-w" ng-class="{'active-item': screen7.prop7,'crossed-item':(screen7.total>maxAttributes && !screen7.prop7)}">Favorable Tax Environment</div>
-                              <div class="results-c" ng-class="{'active-item': screen7.prop8,'crossed-item':(screen7.total>maxAttributes && !screen7.prop8)}">Transparent Government Practices</div>
-                              <div class="results-w" ng-class="{'active-item': screen7.prop9,'crossed-item':(screen7.total>maxAttributes && !screen7.prop9)}">Transparent Government Practices</div>
+                              <div class="results-w" ng-class="{'active-item': screen7.prop1,'crossed-item':(!screen7.prop1)}">Bureaucratic</div>
+                              <div class="results-c" ng-class="{'active-item': screen7.prop2,'crossed-item':(!screen7.prop2)}">Friendly Updates Bureaucracy</div>
+                              <div class="results-w" ng-class="{'active-item': screen7.prop3,'crossed-item':(!screen7.prop3)}">Cheap Manufacturing Costs</div>
+                              <div class="results-c" ng-class="{'active-item': screen7.prop4,'crossed-item':(!screen7.prop4)}">Low Manufacturing Costs</div>
+                              <div class="results-w" ng-class="{'active-item': screen7.prop5,'crossed-item':(!screen7.prop5)}">Corrupt</div>
+                              <div class="results-c" ng-class="{'active-item': screen7.prop6,'crossed-item':(!screen7.prop6)}">Equale Representation For All Gender Races Backgrounds In Key Positions</div>
+                              <div class="results-w" ng-class="{'active-item': screen7.prop7,'crossed-item':(!screen7.prop7)}">Favorable Tax Environment</div>
+                              <div class="results-c" ng-class="{'active-item': screen7.prop8,'crossed-item':(!screen7.prop8)}">Transparent Government Practices</div>
+                              <div class="results-w" ng-class="{'active-item': screen7.prop9,'crossed-item':(!screen7.prop9)}">Transparent Government Practices</div>
 
                         </div>
                   </div>
@@ -433,13 +433,13 @@
                   <div class="results-block-wrap">
                         <h4>POWER</h4>
                         <div class="results-block">
-                              <div class="results-w" ng-class="{'active-item': screen8.prop1,'crossed-item':(screen8.total>maxAttributes && !screen8.prop1)}">A Leader</div>
-                              <div class="results-c" ng-class="{'active-item': screen8.prop2,'crossed-item':(screen8.total>maxAttributes && !screen8.prop2)}">Doesn’t Been Used For Political Goals</div>
-                              <div class="results-w" ng-class="{'active-item': screen8.prop3,'crossed-item':(screen8.total>maxAttributes && !screen8.prop3)}">Economically Influential</div>
-                              <div class="results-c" ng-class="{'active-item': screen8.prop4,'crossed-item':(screen8.total>maxAttributes && !screen8.prop4)}">Strong And Smart Military</div>
-                              <div class="results-w" ng-class="{'active-item': screen8.prop5,'crossed-item':(screen8.total>maxAttributes && !screen8.prop5)}">Politically Influential</div>
-                              <div class="results-c" ng-class="{'active-item': screen8.prop6,'crossed-item':(screen8.total>maxAttributes && !screen8.prop6)}">Strong International Alliances</div>
-                              <div class="results-w" ng-class="{'active-item': screen8.prop7,'crossed-item':(screen8.total>maxAttributes && !screen8.prop7)}">Strong Military</div>
+                              <div class="results-w" ng-class="{'active-item': screen8.prop1,'crossed-item':(!screen8.prop1)}">A Leader</div>
+                              <div class="results-c" ng-class="{'active-item': screen8.prop2,'crossed-item':(!screen8.prop2)}">Doesn’t Been Used For Political Goals</div>
+                              <div class="results-w" ng-class="{'active-item': screen8.prop3,'crossed-item':(!screen8.prop3)}">Economically Influential</div>
+                              <div class="results-c" ng-class="{'active-item': screen8.prop4,'crossed-item':(!screen8.prop4)}">Strong And Smart Military</div>
+                              <div class="results-w" ng-class="{'active-item': screen8.prop5,'crossed-item':(!screen8.prop5)}">Politically Influential</div>
+                              <div class="results-c" ng-class="{'active-item': screen8.prop6,'crossed-item':(!screen8.prop6)}">Strong International Alliances</div>
+                              <div class="results-w" ng-class="{'active-item': screen8.prop7,'crossed-item':(!screen8.prop7)}">Strong Military</div>
 
                         </div>
                   </div>
@@ -447,20 +447,20 @@
                   <div class="results-block-wrap">
                         <h4>QUALITY OF LIFE</h4>
                         <div class="results-block">
-                              <div class="results-w" ng-class="{'active-item': screen9.prop1,'crossed-item':(screen9.total>maxAttributes && !screen9.prop1)}">A Good Job Market</div>
-                              <div class="results-c" ng-class="{'active-item': screen9.prop2,'crossed-item':(screen9.total>maxAttributes && !screen9.prop2)}">Social Rights For All Citizenship</div>
-                              <div class="results-w" ng-class="{'active-item': screen9.prop3,'crossed-item':(screen9.total>maxAttributes && !screen9.prop3)}">Affordable</div>
-                              <div class="results-c" ng-class="{'active-item': screen9.prop4,'crossed-item':(screen9.total>maxAttributes && !screen9.prop4)}">Well Reserved Retirement Scheme</div>
-                              <div class="results-w" ng-class="{'active-item': screen9.prop5,'crossed-item':(screen9.total>maxAttributes && !screen9.prop5)}">Economically Stable</div>
-                              <div class="results-c" ng-class="{'active-item': screen9.prop6,'crossed-item':(screen9.total>maxAttributes && !screen9.prop6)}">6 Months Maternity Leave For All Parents</div>
-                              <div class="results-w" ng-class="{'active-item': screen9.prop7,'crossed-item':(screen9.total>maxAttributes && !screen9.prop7)}">Family Friendly</div>
-                              <div class="results-c" ng-class="{'active-item': screen9.prop8,'crossed-item':(screen9.total>maxAttributes && !screen9.prop8)}">Govermant Finance Education As From The Age Of 12 Month And Until The Completion Of B.A.</div>
-                              <div class="results-w" ng-class="{'active-item': screen9.prop9,'crossed-item':(screen9.total>maxAttributes && !screen9.prop9)}">Income Equality</div>
-                              <div class="results-w" ng-class="{'active-item': screen9.prop10,'crossed-item':(screen9.total>maxAttributes && !screen9.prop10)}">Well-Developed And Affordable Public Health System</div>
-                              <div class="results-w" ng-class="{'active-item': screen9.prop11,'crossed-item':(screen9.total>maxAttributes && !screen9.prop11)}">Politically Stable</div>
-                              <div class="results-w" ng-class="{'active-item': screen9.prop12,'crossed-item':(screen9.total>maxAttributes && !screen9.prop12)}">Safe</div>
-                              <div class="results-w" ng-class="{'active-item': screen9.prop13,'crossed-item':(screen9.total>maxAttributes && !screen9.prop13)}">Well-Developed Public Education System</div>
-                              <div class="results-w" ng-class="{'active-item': screen9.prop14,'crossed-item':(screen9.total>maxAttributes && !screen9.prop14)}">Well-Developed Public Health System </div>
+                              <div class="results-w" ng-class="{'active-item': screen9.prop1,'crossed-item':(!screen9.prop1)}">A Good Job Market</div>
+                              <div class="results-c" ng-class="{'active-item': screen9.prop2,'crossed-item':(!screen9.prop2)}">Social Rights For All Citizenship</div>
+                              <div class="results-w" ng-class="{'active-item': screen9.prop3,'crossed-item':(!screen9.prop3)}">Affordable</div>
+                              <div class="results-c" ng-class="{'active-item': screen9.prop4,'crossed-item':(!screen9.prop4)}">Well Reserved Retirement Scheme</div>
+                              <div class="results-w" ng-class="{'active-item': screen9.prop5,'crossed-item':(!screen9.prop5)}">Economically Stable</div>
+                              <div class="results-c" ng-class="{'active-item': screen9.prop6,'crossed-item':(!screen9.prop6)}">6 Months Maternity Leave For All Parents</div>
+                              <div class="results-w" ng-class="{'active-item': screen9.prop7,'crossed-item':(!screen9.prop7)}">Family Friendly</div>
+                              <div class="results-c" ng-class="{'active-item': screen9.prop8,'crossed-item':(!screen9.prop8)}">Govermant Finance Education As From The Age Of 12 Month And Until The Completion Of B.A.</div>
+                              <div class="results-w" ng-class="{'active-item': screen9.prop9,'crossed-item':(!screen9.prop9)}">Income Equality</div>
+                              <div class="results-w" ng-class="{'active-item': screen9.prop10,'crossed-item':(!screen9.prop10)}">Well-Developed And Affordable Public Health System</div>
+                              <div class="results-w" ng-class="{'active-item': screen9.prop11,'crossed-item':(!screen9.prop11)}">Politically Stable</div>
+                              <div class="results-w" ng-class="{'active-item': screen9.prop12,'crossed-item':(!screen9.prop12)}">Safe</div>
+                              <div class="results-w" ng-class="{'active-item': screen9.prop13,'crossed-item':(!screen9.prop13)}">Well-Developed Public Education System</div>
+                              <div class="results-w" ng-class="{'active-item': screen9.prop14,'crossed-item':(!screen9.prop14)}">Well-Developed Public Health System </div>
 
                         </div>
                   </div>
