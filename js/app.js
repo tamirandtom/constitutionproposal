@@ -10,7 +10,7 @@ App.controller('index', function ($scope, $http) {
     });
   $scope.filterage = 'rrrrrr';
   $scope.screen = 0;
-var maxScreens = 12;
+var maxScreens = 13;
 $scope.maxAttributes = 2;
 
 
@@ -19,7 +19,17 @@ $scope.maxAttributes = 2;
     {
       $scope.screen++;      
     } 
+    if ($scope.screen==12)
+    {
+
+      setTimeout(function () {
+        $scope.$apply(function () {
+        $scope.screen=13;    
+              });
+    }, 3000);
+    }
   };
+
 
 
   $scope.prevScreen = function() {

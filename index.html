@@ -305,7 +305,17 @@
                   <div class="property property--w" ng-init="screen9.prop14 = false" ng-click="screen9.prop14 = !screen9.prop14;countScreen()"
                         ng-class="{'active-item': screen9.prop14,'crossed-item':(screen9.total>maxAttributes && !screen9.prop14)}">Well-Developed Public Health System </div>
             </div>
-            <div class='screen' ng-show="screen==12">
+            <div class='screen screen--mark' ng-show="screen==12">
+                        <div class="background"></div>
+                  <h1>NEW CONSTITUTION IS BEING MADE</h1>
+                  <div class="loader">
+                        <div class="loader-dot"></div>
+                        <div class="loader-dot"></div>
+                        <div class="loader-dot"></div>
+                  </div>
+</div>
+
+            <div class='screen' ng-show="screen==13">
 
                   <!-- results -->
                   <div class="results-screen-padding"></div>
@@ -461,12 +471,11 @@
             </div>
 
             <div class='bottom-sheet'>
-                        <div class='button--prev' ng-click="prevScreen()" ng-class="{'hide-button':(screen == 0)}"><img src="img/prev.svg" alt=""></div>
-                  <div class='button--attr' ng-class="{'hide-button':(screen < 3 || screen > 11)}" ng-click="screen=2" ng-hide="screen==12 || screen==0">attributes</div>
-                  <div class='button--attr' ng-show="screen==12">print</div>
+                        <div class='button--prev' ng-click="prevScreen()" ng-class="{'hide-button':(screen == 0 || screen==12 || screen==13)}"><img src="img/prev.svg" alt=""></div>
+                  <div class='button--attr' ng-class="{'hide-button':(screen < 3 || screen > 12)}" ng-click="screen=2" ng-hide="screen==13 || screen == 12 || screen==0">attributes</div>
+                  <div class='button--attr' ng-show="screen==13">print</div>
                   <div class='button--attr' ng-show="screen==0">A NEW CONSTITUTION PROPOSAL</div>
-                  
-                  <div class='button--next' ng-click="nextScreen()" ng-class="{'hide-button':(screen == 12),'glow':isFinished(screen)}" ><img src="img/next.svg" alt=""></div>
+                  <div class='button--next' ng-click="nextScreen()" ng-class="{'hide-button':(screen == 13 || screen == 12),'glow':isFinished(screen)}" ><img src="img/next.svg" alt=""></div>
                   
             </div>
       </div>
