@@ -3,12 +3,6 @@ var App = angular.module('app', []);
 
 
 App.controller('index', function ($scope, $http) {
-  $http.get('data/data.json')
-    .then(function (res) {
-      $scope.data = res.data;
-      console.log($scope.data.categories);
-    });
-  $scope.filterage = 'rrrrrr';
   $scope.screen = 0;
 var maxScreens = 13;
 $scope.maxAttributes = 2;
@@ -37,6 +31,16 @@ $scope.maxAttributes = 2;
     {
       $scope.screen--;      
     } 
+  };
+
+
+  $scope.areThereMoreWChildern = function(screennum) {
+ if ($('.screen'+screennum+' .property--c.active-item').length < $('.screen'+screennum+' .property--w.active-item').length) {
+   return true;
+ } else {
+   return false;
+ }
+
   };
   
   $scope.isFinished = function(screen) {
@@ -74,7 +78,7 @@ $scope.maxAttributes = 2;
     for (i=1;i<8;i++) {if ($scope.screen8['prop'+i]) {$scope.screen8.total++} }
     for (i=1;i<15;i++) {if ($scope.screen9['prop'+i]) {$scope.screen9.total++} }
   
-    console.log($scope.screen1.total);
+    // console.log($scope.screen1.total);
   };
 
 

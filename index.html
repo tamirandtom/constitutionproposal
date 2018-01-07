@@ -72,7 +72,7 @@
 
 
             </div>
-            <div class='screen screen--mark' ng-show="screen==3">
+            <div class='screen screen--mark screen1' ng-show="screen==3">
                   <div class="background"></div>
                   <h1>I<br>ADVENTURE</h1>
                   <div class="flex-2cols">
@@ -97,7 +97,7 @@
                   <div class="property property--w" ng-init="screen1.prop9 = false" ng-click="screen1.prop9 = !screen1.prop9;countScreen()"
                         ng-class="{'active-item': screen1.prop9,'crossed-item':(screen1.total>maxAttributes && !screen1.prop9)}">Sexy</div>
             </div>
-            <div class='screen screen--mark' ng-show="screen==4">
+            <div class='screen screen--mark screen2' ng-show="screen==4">
                   <div class="background"></div>
                   <h1>II<br>CITIZENSHIP</h1>
                         <div class="flex-2cols">
@@ -120,7 +120,7 @@
                   <div class="property property--w" ng-init="screen2.prop8 = false" ng-click="screen2.prop8 = !screen2.prop8;countScreen()"
                         ng-class="{'active-item': screen2.prop8,'crossed-item':(screen2.total>maxAttributes && !screen2.prop8)}">Well-Distributed Political Power</div>
             </div>
-            <div class='screen screen--mark' ng-show="screen==5">
+            <div class='screen screen--mark screen3' ng-show="screen==5">
                   <div class="background"></div>
                   <h1>III<br>CULTURAL INFLUENCE</h1>
                         <div class="flex-2cols">
@@ -150,7 +150,7 @@
                   <div class="property property--w" ng-init="screen3.prop10 = false" ng-click="screen3.prop10 = !screen3.prop10;countScreen()"
                         ng-class="{'active-item': screen3.prop10,'crossed-item':(screen3.total>maxAttributes && !screen3.prop10)}">Trendy</div>
             </div>
-            <div class='screen screen--mark' ng-show="screen==6">
+            <div class='screen screen--mark screen4' ng-show="screen==6">
                   <div class="background"></div>
                   <h1>IV<br>ENTREPRENEURSHIP</h1>
                         <div class="flex-2cols">
@@ -184,7 +184,7 @@
                   <div class="property property--w" ng-init="screen4.prop13 = false" ng-click="screen4.prop13 = !screen4.prop13;countScreen()"
                         ng-class="{'active-item': screen4.prop13,'crossed-item':(screen4.total>maxAttributes && !screen4.prop13)}">Well-Developed Legal Framework</div>
             </div>
-            <div class='screen screen--mark' ng-show="screen==7">
+            <div class='screen screen--mark screen5' ng-show="screen==7">
                   <div class="background"></div>
                   <h1>V<br>HERITAGE</h1>
                         <div class="flex-2cols">
@@ -204,7 +204,7 @@
                         ng-class="{'active-item': screen5.prop5,'crossed-item':(screen5.total>maxAttributes && !screen5.prop5)}">Many Cultural Attractions</div>
 
             </div>
-            <div class='screen screen--mark' ng-show="screen==8">
+            <div class='screen screen--mark screen6' ng-show="screen==8">
                   <div class="background"></div>
                   <h1>VI<br>MOVERS</h1>
                         <div class="flex-2cols">
@@ -219,7 +219,7 @@
                   <div class="property property--w" ng-init="screen6.prop4 = false" ng-click="screen6.prop4 = !screen6.prop4;countScreen()"
                         ng-class="{'active-item': screen6.prop4,'crossed-item':(screen6.total>maxAttributes && !screen6.prop4)}">Unique</div>
             </div>
-            <div class='screen screen--mark' ng-show="screen==9">
+            <div class='screen screen--mark screen7' ng-show="screen==9">
                   <div class="background"></div>
                   <h1>VII<br>OPEN FOR BUSINESS</h1>
                         <div class="flex-2cols">
@@ -245,7 +245,7 @@
                   <div class="property property--w" ng-init="screen7.prop9 = false" ng-click="screen7.prop9 = !screen7.prop9;countScreen()"
                         ng-class="{'active-item': screen7.prop9,'crossed-item':(screen7.total>maxAttributes && !screen7.prop9)}">Transparent Government Practices</div>
             </div>
-            <div class='screen screen--mark' ng-show="screen==10">
+            <div class='screen screen--mark screen8' ng-show="screen==10">
                   <div class="background"></div>
                   <h1>VIII<br>POWER</h1>
                         <div class="flex-2cols">
@@ -266,7 +266,7 @@
                   <div class="property property--w" ng-init="screen8.prop7 = false" ng-click="screen8.prop7 = !screen8.prop7;countScreen()"
                         ng-class="{'active-item': screen8.prop7,'crossed-item':(screen8.total>maxAttributes && !screen8.prop7)}">Strong Military</div>
             </div>
-            <div class='screen screen--mark' ng-show="screen==11">
+            <div class='screen screen--mark screen9' ng-show="screen==11">
                   <div class="background"></div>
                   <h1>IX<br>QUALITY OF LIFE</h1>
                         <div class="flex-2cols">
@@ -323,7 +323,7 @@
                   
                   <div class="results-block-wrap">
                         
-                        <h4>ADVENTURE</h4>
+                        <h4 ng-class='{"is-w-title":(areThereMoreWChildern(1))}'>ADVENTURE</h4>
                         <div class="results-block">
                               <div class="results-w" ng-class="{'active-item': screen1.prop1,'crossed-item':(!screen1.prop1)}">Friendly</div>
                               <div class="results-c" ng-class="{'active-item': screen1.prop2,'crossed-item':(!screen1.prop2)}">Safe Exploring</div>
@@ -339,7 +339,7 @@
 
 
                   <div class="results-block-wrap">
-                        <h4>CITIZENSHIP</h4>
+                        <h4 ng-class='{"is-w-title":(areThereMoreWChildern(2))}'>CITIZENSHIP</h4>
                         <div class="results-block">
                               <div class="results-w" ng-class="{'active-item': screen2.prop1,'crossed-item':(!screen2.prop1)}">Cares About Human Rights</div>
                               <div class="results-c" ng-class="{'active-item': screen2.prop2,'crossed-item':(!screen2.prop2)}">Cares About The Environment</div>
@@ -353,7 +353,7 @@
                   </div>
 
                   <div class="results-block-wrap">
-                        <h4>CULTURAL INFLUENCE</h4>
+                        <h4 ng-class='{"is-w-title":(areThereMoreWChildern(3))}'>CULTURAL INFLUENCE</h4>
                         <div class="results-block">
                               <div class="results-w" ng-class="{'active-item': screen3.prop1,'crossed-item':(!screen3.prop1)}">Culturally Significant In Terms Of Entertainment</div>
                               <div class="results-c" ng-class="{'active-item': screen3.prop2,'crossed-item':(!screen3.prop2)}">Art As An Engine For Growth And Entrepreneurship</div>
@@ -374,7 +374,7 @@
 
 
                   <div class="results-block-wrap">
-                        <h4>ENTREPRENEURSHIP</h4>
+                        <h4 ng-class='{"is-w-title":(areThereMoreWChildern(4))}'>ENTREPRENEURSHIP</h4>
                         <div class="results-block">
                               <div class="results-w" ng-class="{'active-item': screen4.prop1,'crossed-item':(!screen4.prop1)}">Connected To The Rest Of The World</div>
                               <div class="results-c" ng-class="{'active-item': screen4.prop2,'crossed-item':(!screen4.prop2)}">Entrepreneurship That Reflects the Diversity of the Population</div>
@@ -393,7 +393,7 @@
                   </div>
 
                   <div class="results-block-wrap">
-                        <h4>HERITAGE</h4>
+                        <h4 ng-class='{"is-w-title":(areThereMoreWChildern(5))}'>HERITAGE</h4>
                         <div class="results-block">
                               <div class="results-w" ng-class="{'active-item': screen5.prop1,'crossed-item':(!screen5.prop1)}">Culturally Accessible</div>
                               <div class="results-c" ng-class="{'active-item': screen5.prop2,'crossed-item':(!screen5.prop2)}">Promotes And Preserves The Heritage Of The Different Social Groups Of Its Citizens</div>
@@ -404,7 +404,7 @@
                   </div>
 
                   <div class="results-block-wrap">
-                        <h4>MOVERS</h4>
+                        <h4 ng-class='{"is-w-title":(areThereMoreWChildern(6))}'>MOVERS</h4>
                         <div class="results-block">
                               <div class="results-w" ng-class="{'active-item': screen6.prop1,'crossed-item':(!screen6.prop1)}">Different</div>
                               <div class="results-w" ng-class="{'active-item': screen6.prop2,'crossed-item':(!screen6.prop2)}">Distinctive</div>
@@ -415,7 +415,7 @@
                   </div>
 
                   <div class="results-block-wrap">
-                        <h4>OPEN FOR BUSINESS</h4>
+                        <h4 ng-class='{"is-w-title":(areThereMoreWChildern(7))}'>OPEN FOR BUSINESS</h4>
                         <div class="results-block">
                               <div class="results-w" ng-class="{'active-item': screen7.prop1,'crossed-item':(!screen7.prop1)}">Bureaucratic</div>
                               <div class="results-c" ng-class="{'active-item': screen7.prop2,'crossed-item':(!screen7.prop2)}">Friendly Updates Bureaucracy</div>
@@ -431,7 +431,7 @@
                   </div>
 
                   <div class="results-block-wrap">
-                        <h4>POWER</h4>
+                        <h4 ng-class='{"is-w-title":(areThereMoreWChildern(8))}'>POWER</h4>
                         <div class="results-block">
                               <div class="results-w" ng-class="{'active-item': screen8.prop1,'crossed-item':(!screen8.prop1)}">A Leader</div>
                               <div class="results-c" ng-class="{'active-item': screen8.prop2,'crossed-item':(!screen8.prop2)}">Doesn’t Been Used For Political Goals</div>
@@ -445,7 +445,7 @@
                   </div>
 
                   <div class="results-block-wrap">
-                        <h4>QUALITY OF LIFE</h4>
+                        <h4 ng-class='{"is-w-title":(areThereMoreWChildern(9))}'>QUALITY OF LIFE</h4>
                         <div class="results-block">
                               <div class="results-w" ng-class="{'active-item': screen9.prop1,'crossed-item':(!screen9.prop1)}">A Good Job Market</div>
                               <div class="results-c" ng-class="{'active-item': screen9.prop2,'crossed-item':(!screen9.prop2)}">Social Rights For All Citizenship</div>
@@ -480,6 +480,7 @@
             </div>
       </div>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular.js"></script>
+      <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>    
       <script src="js/app.js"></script>
 </body>
 
