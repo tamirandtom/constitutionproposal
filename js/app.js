@@ -11,7 +11,7 @@ App.controller('index', function ($scope, $http) {
   $scope.filterage = 'rrrrrr';
   $scope.screen = 0;
 var maxScreens = 12;
-$scope.maxAttributes = 3;
+$scope.maxAttributes = 2;
 
 
   $scope.nextScreen = function() {
