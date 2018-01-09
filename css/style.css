@@ -281,6 +281,40 @@ span {
         transform: rotate(0deg);
     }
     100% {
-        transform: rotate(360deg);
+        transform: rotate(-360deg);
     }
+}
+
+
+/* for desktop */
+
+@media screen 
+  and (min-device-width: 1200px) 
+  and (max-device-width: 1600px) 
+  and (min-resolution: 192dpi) { 
+
+.container-top {
+    position: relative;
+    width:590px;
+    height:95vh;
+    overflow: hidden;
+box-shadow: 0 2px 18px 0 rgba(0,0,0,0.15);
+margin: auto auto;
+margin-top: 2vh;
+}
+
+.bottom-sheet {
+    left: 0px;
+}
+
+.property {
+ margin-top:2px;
+  
+}
+
+.results-w, .results-c {
+    font-size: 8px;
+    line-height: 11px; 
+}
+
 }
