@@ -290,9 +290,9 @@ span {
 
 @media screen 
   and (min-device-width: 1200px) 
-  and (max-device-width: 1600px) 
-  and (min-resolution: 192dpi) { 
-
+  /* and (max-device-width: 1600px)  */
+  /* and (min-resolution: 192dpi) {  */
+{
     body {
         overflow: hidden;
     }
@@ -320,4 +320,7 @@ margin-top: 2vh;
     line-height: 11px; 
 }
 
+.background {
+    background-image: url('../img/line-short.svg');
+}
 }
