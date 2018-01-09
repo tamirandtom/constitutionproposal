@@ -70,7 +70,7 @@ $scope.maxAttributes = 2;
 
     for (i=1;i<10;i++) {if ($scope.screen1['prop'+i]) {$scope.screen1.total++} }
     for (i=1;i<9;i++) {if ($scope.screen2['prop'+i]) {$scope.screen2.total++} }
-    for (i=1;i<11;i++) {if ($scope.screen3['prop'+i]) {$scope.screen3.total++} }
+    for (i=1;i<12;i++) {if ($scope.screen3['prop'+i]) {$scope.screen3.total++} }
     for (i=1;i<14;i++) {if ($scope.screen4['prop'+i]) {$scope.screen4.total++} }
     for (i=1;i<6;i++) {if ($scope.screen5['prop'+i]) {$scope.screen5.total++} }
     for (i=1;i<5;i++) {if ($scope.screen6['prop'+i]) {$scope.screen6.total++} }
