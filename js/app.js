@@ -87,6 +87,8 @@ $scope.maxAttributes = 2;
 
 });
 
+
+// disables double tapping zoom on ipad
 (function($) {
   $.fn.nodoubletapzoom = function() {
       $(this).bind('touchstart', function preventZoom(e) {
