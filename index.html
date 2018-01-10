@@ -479,10 +479,11 @@
 
             <div class='bottom-sheet'>
                         <div class='button--prev' ng-click="prevScreen()" ng-class="{'hide-button':(screen == 0 || screen==12 || screen==13)}"><img src="img/prev.svg" alt=""></div>
-                  <div class='button--attr' ng-class="{'hide-button':(screen < 3 || screen > 12)}" ng-click="screen=2" ng-hide="screen==13 || screen == 12 || screen==0">attributes</div>
+                  <div class='button--attr' ng-class="{'hide-button':(screen < 3 || screen > 12)}" ng-click="screen=2" ng-hide="screen == 12 || screen == 13 || screen==0">attributes</div>
                   <div class='button--attr' ng-show="screen==13">print</div>
                   <div class='button--attr' ng-show="screen==0">A NEW CONSTITUTION PROPOSAL</div>
-                  <div class='button--next' ng-click="nextScreen()" ng-class="{'hide-button':(screen == 13 || screen == 12),'glow':isFinished(screen)}" ><img src="img/next.svg" alt=""></div>
+                  <div class='button--next' ng-click="nextScreen()" ng-class="{'hide-button':(screen == 13 || screen == 12),'glow':isFinished(screen)}" ng-hide="screen == 13"><img src="img/next.svg" alt=""></div>
+                  <div class='button--restart' ng-click="restartAll()" ng-hide="screen != 13" ><img src="img/restart.svg" alt=""></div>
                   
             </div>
       </div>

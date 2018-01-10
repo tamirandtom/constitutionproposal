@@ -34,6 +34,21 @@ $scope.maxAttributes = 2;
   };
 
 
+  $scope.restartAll = function() {
+    for (i=1;i<10;i++) { $scope.screen1['prop'+i] = false; $scope.screen1.total=0;}
+    for (i=1;i<9;i++) { $scope.screen2['prop'+i] = false; $scope.screen2.total=0; }
+    for (i=1;i<12;i++) { $scope.screen3['prop'+i] = false; $scope.screen3.total=0; }
+    for (i=1;i<14;i++) { $scope.screen4['prop'+i] = false; $scope.screen4.total=0; }
+    for (i=1;i<6;i++) { $scope.screen5['prop'+i] = false; $scope.screen5.total=0; }
+    for (i=1;i<5;i++) { $scope.screen6['prop'+i] = false; $scope.screen6.total=0; }
+    for (i=1;i<10;i++) { $scope.screen7['prop'+i] = false; $scope.screen7.total=0;}
+    for (i=1;i<8;i++) { $scope.screen8['prop'+i] = false; $scope.screen8.total=0; }
+    for (i=1;i<15;i++) { $scope.screen9['prop'+i] = false; $scope.screen9.total=0; }
+    $scope.screen = 0;
+
+  };
+
+
   $scope.areThereMoreWChildern = function(screennum) {
  if ($('.screen'+screennum+' .property--c.active-item').length < $('.screen'+screennum+' .property--w.active-item').length) {
    return true;
