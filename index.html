@@ -21,7 +21,7 @@
                         <div class="results-screen-padding"></div>
                         <div class="background">
                               <img class='intro-logo' src="img/logo.svg" alt="">
-                              <img src="img/logo-line.svg" alt="">
+                              <img class='intro-line' src="img/logo-line.svg" alt="">
                         </div>
                   
                   
@@ -330,7 +330,7 @@
                   
                   <div class="results-block-wrap">
                         
-                        <h4 ng-class='{"is-w-title":(areThereMoreWChildern(1))}'>ADVENTURE</h4>
+                        <h4 ng-class='{"is-w-title":(areThereMoreWChildern(1)), "crossed-item":(!screen1.total)}'>ADVENTURE</h4>
                         <div class="results-block">
                               <div class="results-w" ng-class="{'active-item': screen1.prop1,'crossed-item':(!screen1.prop1)}">Friendly</div>
                               <div class="results-c" ng-class="{'active-item': screen1.prop2,'crossed-item':(!screen1.prop2)}">Safe Exploring</div>
@@ -346,7 +346,7 @@
 
 
                   <div class="results-block-wrap">
-                        <h4 ng-class='{"is-w-title":(areThereMoreWChildern(2))}'>CITIZENSHIP</h4>
+                        <h4 ng-class='{"is-w-title":(areThereMoreWChildern(2)), "crossed-item":(!screen2.total)}'>CITIZENSHIP</h4>
                         <div class="results-block">
                               <div class="results-w" ng-class="{'active-item': screen2.prop1,'crossed-item':(!screen2.prop1)}">Cares About Human Rights</div>
                               <div class="results-c" ng-class="{'active-item': screen2.prop2,'crossed-item':(!screen2.prop2)}">Cares About The Environment</div>
@@ -360,7 +360,7 @@
                   </div>
 
                   <div class="results-block-wrap">
-                        <h4 ng-class='{"is-w-title":(areThereMoreWChildern(3))}'>CULTURAL INFLUENCE</h4>
+                        <h4 ng-class='{"is-w-title":(areThereMoreWChildern(3)), "crossed-item":(!screen3.total)}'>CULTURAL INFLUENCE</h4>
                         <div class="results-block">
                               <div class="results-w" ng-class="{'active-item': screen3.prop1,'crossed-item':(!screen3.prop1)}">Culturally Significant In Terms Of Entertainment</div>
                               <div class="results-c" ng-class="{'active-item': screen3.prop2,'crossed-item':(!screen3.prop2)}">Art As An Engine For Growth And Entrepreneurship</div>
@@ -381,7 +381,7 @@
 
 
                   <div class="results-block-wrap">
-                        <h4 ng-class='{"is-w-title":(areThereMoreWChildern(4))}'>ENTREPRENEURSHIP</h4>
+                        <h4 ng-class='{"is-w-title":(areThereMoreWChildern(4)), "crossed-item":(!screen4.total)}'>ENTREPRENEURSHIP</h4>
                         <div class="results-block">
                               <div class="results-w" ng-class="{'active-item': screen4.prop1,'crossed-item':(!screen4.prop1)}">Connected To The Rest Of The World</div>
                               <div class="results-c" ng-class="{'active-item': screen4.prop2,'crossed-item':(!screen4.prop2)}">Entrepreneurship That Reflects the Diversity of the Population</div>
@@ -400,7 +400,7 @@
                   </div>
 
                   <div class="results-block-wrap">
-                        <h4 ng-class='{"is-w-title":(areThereMoreWChildern(5))}'>HERITAGE</h4>
+                        <h4 ng-class='{"is-w-title":(areThereMoreWChildern(5)), "crossed-item":(!screen5.total)}'>HERITAGE</h4>
                         <div class="results-block">
                               <div class="results-w" ng-class="{'active-item': screen5.prop1,'crossed-item':(!screen5.prop1)}">Culturally Accessible</div>
                               <div class="results-c" ng-class="{'active-item': screen5.prop2,'crossed-item':(!screen5.prop2)}">Promotes And Preserves The Heritage Of The Different Social Groups Of Its Citizens</div>
@@ -411,7 +411,7 @@
                   </div>
 
                   <div class="results-block-wrap">
-                        <h4 ng-class='{"is-w-title":(areThereMoreWChildern(6))}'>MOVERS</h4>
+                        <h4 ng-class='{"is-w-title":(areThereMoreWChildern(6)), "crossed-item":(!screen6.total)}'>MOVERS</h4>
                         <div class="results-block">
                               <div class="results-w" ng-class="{'active-item': screen6.prop1,'crossed-item':(!screen6.prop1)}">Different</div>
                               <div class="results-w" ng-class="{'active-item': screen6.prop2,'crossed-item':(!screen6.prop2)}">Distinctive</div>
@@ -422,7 +422,7 @@
                   </div>
 
                   <div class="results-block-wrap">
-                        <h4 ng-class='{"is-w-title":(areThereMoreWChildern(7))}'>OPEN FOR BUSINESS</h4>
+                        <h4 ng-class='{"is-w-title":(areThereMoreWChildern(7)), "crossed-item":(!screen7.total)}'>OPEN FOR BUSINESS</h4>
                         <div class="results-block">
                               <div class="results-w" ng-class="{'active-item': screen7.prop1,'crossed-item':(!screen7.prop1)}">Bureaucratic</div>
                               <div class="results-c" ng-class="{'active-item': screen7.prop2,'crossed-item':(!screen7.prop2)}">Friendly Updates Bureaucracy</div>
@@ -438,7 +438,7 @@
                   </div>
 
                   <div class="results-block-wrap">
-                        <h4 ng-class='{"is-w-title":(areThereMoreWChildern(8))}'>POWER</h4>
+                        <h4 ng-class='{"is-w-title":(areThereMoreWChildern(8)), "crossed-item":(!screen8.total)}'>POWER</h4>
                         <div class="results-block">
                               <div class="results-w" ng-class="{'active-item': screen8.prop1,'crossed-item':(!screen8.prop1)}">A Leader</div>
                               <div class="results-c" ng-class="{'active-item': screen8.prop2,'crossed-item':(!screen8.prop2)}">Doesn’t Been Used For Political Goals</div>
@@ -452,7 +452,7 @@
                   </div>
 
                   <div class="results-block-wrap">
-                        <h4 ng-class='{"is-w-title":(areThereMoreWChildern(9))}'>QUALITY OF LIFE</h4>
+                        <h4 ng-class='{"is-w-title":(areThereMoreWChildern(9)), "crossed-item":(!screen9.total)}'>QUALITY OF LIFE</h4>
                         <div class="results-block">
                               <div class="results-w" ng-class="{'active-item': screen9.prop1,'crossed-item':(!screen9.prop1)}">A Good Job Market</div>
                               <div class="results-c" ng-class="{'active-item': screen9.prop2,'crossed-item':(!screen9.prop2)}">Social Rights For All Citizenship</div>
