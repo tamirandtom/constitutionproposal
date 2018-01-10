@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="9px" height="850px" viewBox="0 0 9 850" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>line-print</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="line-print" stroke="#BB9008">
+            <path d="M4.5,8 L4.5,760" id="Stroke-1"></path>
+            <path d="M4.5,8.5 C6.70861564,8.5 8.5,6.70861564 8.5,4.5 C8.5,2.29048284 6.70912843,0.5 4.5,0.5 C2.29087157,0.5 0.5,2.29048284 0.5,4.5 C0.5,6.70861564 2.29138436,8.5 4.5,8.5 Z" id="Stroke-4"></path>
+        </g>
+    </g>
+</svg>

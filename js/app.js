@@ -8,6 +8,36 @@ var maxScreens = 13;
 $scope.maxAttributes = 2;
 
 
+// Get country
+
+$.get("https://ipinfo.io", function(response) {
+   
+$scope.currLocation = response.city+", "+response.country;
+    
+}, "jsonp");
+
+
+// Get date
+
+var today = new Date();
+var dd = today.getDate();
+var mm = today.getMonth()+1; //January is 0!
+var yyyy = today.getFullYear();
+
+if(dd<10) {
+    dd = '0'+dd
+} 
+
+if(mm<10) {
+    mm = '0'+mm
+} 
+
+today = mm + '/' + dd + '/' + yyyy;
+
+
+$scope.currDate = today;
+
+
   $scope.nextScreen = function() {
     if ($scope.screen < maxScreens)
     {
@@ -97,7 +127,26 @@ $scope.maxAttributes = 2;
   };
 
 
+  $scope.print = function() {
+    Popup($('.to-print').html());
+}
 
+function Popup(data) {
+    var mywindow = window.open('', 'new div', 'height=400,width=600');
+    mywindow.document.write('<html><head><title></title>');
+    mywindow.document.write( "<link rel=\"stylesheet\" href=\"css/print.css\" type=\"text/css\" media=\"all\"/>" );
+    mywindow.document.write('</head><body>');
+    mywindow.document.write(data);
+    mywindow.document.write('</body></html>');
+    setTimeout(function () {
+      mywindow.print();
+    mywindow.close();
+  }, 500);
+
+    
+
+    return true;
+}
 
 
 });

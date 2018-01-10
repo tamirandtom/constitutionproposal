@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css?family=Libre+Baskerville:400,700|Montserrat:700,600,800,900');
+* {
+    box-sizing: border-box;
+}
+@page {
+    size: auto;   /* auto is the initial value */
+    margin: 0;  /* this affects the margin in the printer settings */
+}
+html,
+body {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    -webkit-text-size-adjust: 100%;
+}
+
+
+/* each screen takes 100% of screen */
+
+.screen {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+}
+
+.background {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.subheaders {
+    text-align: center;
+}
+
+.property {
+    z-index: 1;
+    text-align: center;
+    width: 50%;
+    transition: all 0.3s ease-out;
+}
+
+.property--c {
+    align-self: flex-end;
+}
+
+.active-item {
+    width: 100%;
+}
+
+.crossed-item {
+    text-decoration: line-through;
+    pointer-events: none;
+}
+
+.bottom-sheet {
+    position: fixed;
+    bottom: 0px;
+    height: 100px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+/* titles */
+
+h1 {
+    z-index: 1;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    line-height: 19px;
+    font-weight: 600;
+}
+h1.intro-text {
+    line-height: 22px;
+}
+
+.screen--mark h1 {
+    padding: 90px 0 60px 0;
+}
+
+
+.results-screen-padding {
+    height: 160px;
+}
+
+.results-block {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 540px;
+}
+
+.results-block .active-item {
+    width: auto;
+}
+
+.results-w,
+.results-c {
+    margin-right: 3px;
+    display: inline;
+    font-size: 10px;
+    line-height: 15px;
+}
+
+.results-block-wrap {
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 21px;
+}
+
+.results-w {
+    font-family: 'Libre Baskerville', serif;
+}
+
+.results-c {
+    font-family: 'Montserrat', sans-serif;
+}
+
+h4 {
+    text-align: center;
+    margin: 0px;
+    font-size: 10px;
+    line-height: 15px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+h4.is-w-title {
+    font-family: 'Libre Baskerville', serif;
+}
+
+span {
+    display: inline-block;
+}
+
+
+/* Buttons */
+
+.button--attr {
+    font-size: 12px;
+    font-family: 'Libre Baskerville', serif;
+    color: #000;
+    text-transform: uppercase;
+    width: 240px;
+    text-align: center;
+}
+
+.hide-button {
+    opacity: 0;
+    pointer-events: none;
+}
+
+
+.bottom-print-sheet {
+    margin-top:120px;
+    display: flex;
+
+}
+
+.bottom-print-sheet .third 
+{
+    width:33%;
+    text-align: center;
+    text-transform: uppercase;
+}
