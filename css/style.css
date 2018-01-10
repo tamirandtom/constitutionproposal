@@ -293,6 +293,13 @@ span {
   /* and (max-device-width: 1600px)  */
   /* and (min-resolution: 192dpi) {  */
 {
+
+    .results-screen-padding {
+        height: 70px;
+    }
+
+    
+
     .screen--mark h1 {
         padding-top: 70px;
     }
