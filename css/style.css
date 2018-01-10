@@ -100,7 +100,7 @@ h1.intro-text {
 }
 
 .screen--mark h1 {
-    padding: 90px 0 60px 0;
+    padding: 90px 0 45px 0;
 }
 
 .subheaders {
@@ -125,7 +125,7 @@ h1.intro-text {
 
 .property {
     font-size: 10px;
-    line-height: 16px;
+    line-height: 12px;
     margin-top:10px;
 }
 
@@ -331,7 +331,7 @@ margin-top: 2vh;
 }
 
 .property {
- margin-top:2px;
+ margin-top:10px;
   
 }
 

@@ -139,11 +139,16 @@ function Popup(data) {
     mywindow.document.write(data);
     mywindow.document.write('</body></html>');
     setTimeout(function () {
+     
       mywindow.print();
-    mywindow.close();
-  }, 500);
-
+      mywindow.close();
+      
+  }, 800);
+  
+    // mywindow.addEventListener('load', function() {
+      
     
+    // }, false);
 
     return true;
 }
