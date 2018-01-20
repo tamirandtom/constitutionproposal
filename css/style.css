@@ -298,6 +298,14 @@ span {
         height: 70px;
     }
 
+.button--restart img {
+    width: 60px;
+    bottom: 60px;
+    left: calc(50% + 160px);
+        position: absolute;
+
+}
+
     
 
     .screen--mark h1 {
